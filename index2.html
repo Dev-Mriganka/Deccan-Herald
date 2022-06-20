@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Home Page</title>
+    <style>
+      * {
+        font-family: "Source Sans Pro", Arial, sans-serif;
+      }
+
+      .main {
+        width: 100%;
+        margin: 0;
+        background-color: #f0f5f4;
+        padding: 18px;
+        display: grid;
+        grid-template-columns: repeat(3, 380px);
+        grid-template-rows: repeat(1, 280px);
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .story {
+        width: 100%;
+        margin: 0;
+        padding: 18px;
+        display: grid;
+        grid-template-columns: repeat(3, 380px);
+        grid-template-rows: repeat(1, 280px);
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .beng {
+        display: grid;
+        background-color: #f0f5f4;
+        grid-template-columns: 740px 380px;
+        justify-content: center;
+        gap: 30px;
+        padding: 18px;
+      }
+
+      .th:hover,
+      h5:hover {
+        text-decoration: underline;
+      }
+
+      .iot {
+        margin-top: -45px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px #000;
+        line-height: 20px;
+        text-align: center;
+        height: auto;
+        width: 370px;
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.65) 60%
+        );
+        position: relative;
+      }
+
+      .new31 > div,
+      .new32 > div,
+      .new33 > div,
+      .new34 > div,
+      .new35 > div,
+      .new36 > div {
+        display: grid;
+        grid-template-columns: 25% 70%;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .new21 > div,
+      .new22 > div,
+      .new23 > div,
+      .new24 > div,
+      .new25 > div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 13px;
+        font-weight: 700;
+        background-color: white;
+      }
+
+      .new21 img,
+      .new22 img,
+      .new23 img,
+      .new24 img,
+      .new25 img {
+        width: 100%;
+      }
+
+      .new21 > div > :last-child,
+      .new22 > div > :last-child,
+      .new23 > div > :last-child,
+      .new24 > div > :last-child,
+      .new25 > div > :last-child {
+        padding: 0 10px;
+        font-size: 15px;
+      }
+
+      .new21,
+      .new22,
+      .new23,
+      .new24,
+      .new25 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+      }
+
+      .new31,
+      .new32,
+      .new33,
+      .new34,
+      .new35,
+      .new36 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: white;
+        padding: 15px;
+      }
+
+      .new33,
+      .new22 > div,
+      .new34,
+      .new23 > div,
+      .new35,
+      .new24 > div {
+        background-color: #f0f5f4;
+      }
+
+      .new51 {
+        display: flex;
+        font-size: 13px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px;
+        background-color: white;
+        line-height: 16px;
+        font-weight: 700;
+      }
+
+      #home ul {
+        margin-bottom: 10px;
+        padding: 0 0 0 15px;
+      }
+
+      .heading {
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+        margin: auto;
+      }
+
+      .beng1 {
+        display: flex;
+        background-color: #68a924;
+        color: white;
+        margin-bottom: 15px;
+      }
+      .beng2 {
+        width: 740px;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(3, 235px);
+        align-items: flex-start;
+      }
+      .beng2 > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+      }
+      .beng3 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: fit-content;
+        width: 380px;
+      }
+      .beng2 > div > p,
+      .beng3 > p {
+        padding: 0 18px;
+        background-color: white;
+      }
+
+      .beng1 > h2 {
+        padding: 20px 30px;
+      }
+
+      @media only screen and (min-width: 500px) and (max-width: 768px) {
+        .main {
+          display: grid;
+          grid-template-columns: repeat(2, 380px);
+          grid-template-rows: repeat(3, 280px);
+          grid-auto-flow: column;
+        }
+
+        .story {
+          display: grid;
+          grid-template-columns: repeat(2, 380px);
+          grid-template-rows: repeat(1, 280px);
+          grid-auto-flow: column;
+        }
+
+        .heading {
+          display: flex;
+          width: 96%;
+          margin: auto;
+        }
+
+        .beng {
+          display: grid;
+          grid-template-columns: 740px;
+          grid-template-rows: repeat(2, 280px);
+          justify-content: center;
+          gap: 30px;
+          padding: 18px;
+          height: auto;
+        }
+        .beng3 {
+          display: none;
+        }
+        .th:hover,
+        h5:hover {
+          text-decoration: underline;
+        }
+      }
+
+      @media only screen and (min-width: 320px) and (max-width: 499px) {
+        .main {
+          display: grid;
+          grid-template-columns: repeat(1, 380px);
+          grid-template-rows: repeat(6, 280px);
+          grid-auto-flow: column;
+        }
+
+        .heading {
+          display: flex;
+          width: 96%;
+          margin: auto;
+        }
+
+        .story {
+          display: grid;
+          grid-template-columns: repeat(1, 380px);
+          grid-template-rows: repeat(6, 280px);
+          grid-auto-flow: column;
+        }
+
+        .th:hover,
+        h5:hover {
+          text-decoration: underline;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+	<div id="header"></div>
+    <div id="home">
+		<div class="main">
+		  <div>
+			<img
+			  src="https://www.deccanherald.com/sites/dh/files/styles/fullcardimage/public/articleimages/2022/06/14/pm-kisan-website-screen-grab-1118099-1655207464.jpg?itok=ezF28urw"
+			  alt="Error"
+			/>
+			<p class="iot th">
+			  PM-Kisan website loophole risked 11 crore Aadhaar IDs
+			</p>
+		  </div>
+		  <div class="new31"></div>
+		  <div></div>
+		  <div class="new21"></div>
+		  <div class="new51"></div>
+		  <div class="new32"></div>
+		</div>
+		<div class="heading">
+		  <h3>MORE TOP STORIES</h3>
+		  <div></div>
+		  <h6>VIEW ALL</h6>
+		</div>
+		<div class="story">
+		  <div class="new22"></div>
+		  <div class="new33"></div>
+		</div>
+	
+		<div class="heading">
+		  <h3>BENGALURU</h3>
+		  <div></div>
+		  <h6>VIEW ALL</h6>
+		</div>
+		<div class="beng">
+		  <div>
+			<div class="beng1 th">
+			  <img
+				src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/06/18/whatsapp-image-2022-06-18-at-122555-pm-1119201-1655543224.jpg?itok=BXPjOTf7"
+				alt="Error"
+			  />
+			  <h2>Singapura lake breach leaves houses flooded</h2>
+			</div>
+			<div class="beng2">
+			  <div>
+				<img
+				  src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/18/whatsapp-image-2022-06-18-at-114531-am-1119177-1655535027.jpg?itok=l0mdJ69S"
+				  alt="Error"
+				/>
+				<p>B'luru rains: Search on for man who fell into...</p>
+			  </div>
+			  <div>
+				<img
+				  src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/18/whatsapp-image-2022-06-18-at-114531-am-1119177-1655535027.jpg?itok=l0mdJ69S"
+				  alt="Error"
+				/>
+				<p>B'luru rains: Search on for man who fell into...</p>
+			  </div>
+			  <div>
+				<img
+				  src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/18/whatsapp-image-2022-06-18-at-114531-am-1119177-1655535027.jpg?itok=l0mdJ69S"
+				  alt="Error"
+				/>
+				<p>B'luru rains: Search on for man who fell into...</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="beng3">
+			<img
+			  src="https://www.deccanherald.com/sites/dh/files/styles/largevertical/public/articleimages/2022/06/18/file7lh5omp7i1tpecn68kk-1119107-1655517939.jpg?itok=bmB1VHsV"
+			  alt=""
+			/>
+			<p>BU hostel given for Covid care returned in messy...</p>
+		  </div>
+		</div>
+	
+		<div class="heading">
+		  <h3>KARANTAKA</h3>
+		  <div></div>
+		  <h6>VIEW ALL</h6>
+		</div>
+		<div class="story">
+		  <div class="new23"></div>
+		  <div class="new34"></div>
+		</div>
+		<div class="heading">
+		  <h3>MORE FROM KARANTAKA</h3>
+		  <div></div>
+		  <h6>VIEW ALL</h6>
+		</div>
+		<div class="story">
+		  <div class="new24"></div>
+		  <div class="new35"></div>
+		</div>
+		<div class="heading">
+		  <h3>NATIONAL</h3>
+		  <div></div>
+		  <h6>VIEW ALL</h6>
+		</div>
+		<div class="story">
+		  <div class="new25"></div>
+		  <div class="new36"></div>
+		</div>
+	</div>
+	<div id="footer"></div>
+  </body>
+    <script>
+    $(function () {
+        $("#header").load("nav.html");
+    });
+    $(function () {
+        $("#footer").load("footer.html");
+    });
+</script>
+</html>
+
+<script>
+  let countn3 = 1;
+  let countn5 = 1;
+  let countn2 = 1;
+
+  let news2 = [
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/18/file7kioyz0u8ibfrkh2ipt-1119126-1655521366.jpg?itok=b_OAuZux",
+      text: "Talking can spread Covid as much as coughing: IISc...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/18/file7lh1kdw6obljvuxag0e-1119091-1655521356.jpg?itok=R33lZ-Zz",
+      text: "‘Why can’t B'luru's public infra be disabled-friendly?’",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/18/file7lh63mdimvd1bun1dcks-1119052-1655521163.jpg?itok=Y6W8p8ce",
+      text: "Charlie behind the camera",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/18/file7lh57eaouar16gud66jh-1119092-1655490658.jpg?itok=KtdiNsg_",
+      text: "How ‘Vikram’ pays homage to Hollywood action thrillers...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/18/covid-1116806-1654796457-1-1117247-1654946068-1117907-1655174150-1119120-1655521235.jpg?itok=ajBFp1xB",
+      text: "Karnataka's Covid cases on the rise but no new...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/18/file7kioyz0u8ibfrkh2ipt-1119126-1655521366.jpg?itok=b_OAuZux",
+      text: "Talking can spread Covid as much as coughing: IISc...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/18/istock-854429164-1119055-1655518962.jpg?itok=NJSKA8QN",
+      text: "Students seek reintroduction of free sanitary napkins",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/17/file7lgn8iup6ww1mnma9ayd-1118809-1655412459.jpg?itok=LcgCSpgh",
+      text: "Heavy showers inundate Yellamma temple",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/18/pti05252022000193a-1-1117200-1654924653-1-1119149-1655523443.jpg?itok=mkKsMhXR",
+      text: "Police officer's body found near J&K's Pampore town...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/18/Anti-Agnipath%20protest%20in%20Mathura%20PTI-1655522325.jpg?itok=eC_TE3T_",
+      text: "Agnipath Row Live: 6 FIRs registered in 4 UP...",
+    },
+  ];
+
+  let news3 = [
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/15/PTI06_14_2022_000061B%281%29-1655263808.jpg?itok=ZENncnMc",
+      text: "News Live: ED asks Rahul Gandhi to rejoin probe...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/15/pti06052022000148a-1118262-1655263586.jpg?itok=mKGdi8Cb",
+      text: "Moosewala killing: Lawrence Bishnoi brought to Punjab",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/15/pti11182021000073b1-1118261-1655261592.jpg?itok=xQikB1L7",
+      text: "Top-rung leaders to skip Mamata’s meet on Prez polls...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/15/swapna-suresh-pti-1-1116400-1654684803-1118217-1655260126.jpg?itok=p8sMfO_l",
+      text: "I'll remind CM Vijayan that he knows me: Swapna...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/15/file75divhjoq87ns5e8ba-1117365-1654967221-1-1117365-1655000004-1118229-1655238684.jpg?itok=vzOG_4Fk",
+      text: "Karnataka govt uploads all revised textbooks",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/15/file7lfl74ti6mvqerg68fn-1118244-1655241298.jpg?itok=d_KLXU8n",
+      text: "Siddhanth took cocaine at party, shows medical report  ...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/18/untitled-design-2022-06-18t072943484-1119119-1655521502.jpg?itok=dthpwep2",
+      text: "Rich BDA 'gardener' under scanner after raids",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/18/untitled-design-2022-06-18t013101167-1119129-1655496315.jpg?itok=6CMQmH6e",
+      text: "French cinema legend Jean-Louis Trintignant passes away",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/18/file7lh5omp7i1tpecn68kk-1119107-1655517939.jpg?itok=nuQBwU9n",
+      text: "BU hostel given for Covid care returned in messy...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/18/ip-istock-1090972-1647193539-1119133-1655521182.jpg?itok=hojGUgGe",
+      text: "K'taka forms panels as firms line up for citizen...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/18/bommai-dh-pic-1057534-1638610105-1119021-1655510263.png?itok=wBjbB5E0",
+      text: "CM Bommai seeks early approval to Mekedatu project...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/17/bc-1119036-1655486475.jpg?itok=rsDW_q8j",
+      text: "Textbook row: Nagesh reaches out to ex-PM Deve Gowda...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/17/water-1118778-1655482753.jpg?itok=i-X9LkNM",
+      text: "Death toll in Raichur water tragedy rises to 7...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/17/pti06142022000294b-1-1118769-1655409523.jpg?itok=GE1JSuBB",
+      text: "Sadhguru to conclude #SaveSoil campaign in Mysuru",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/17/file7lglv4zo3ts2m4fvcks-1118751-1655397421-1-1118751-1655408367.jpg?itok=GFotrJlo",
+      text: "Chamundi Hill road develops cracks; yet to be restored...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/18/FVgAgW8UEAAIIWZ%20%281%29-1655521159.jpg?itok=aedNYg-1",
+      text: "News Live: PM Modi wishes his mother Heeraba on...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/18/agnipath-1119141-1655516848.jpg?itok=7P0y-Rxc",
+      text: "DH Toon | What about Agnipath left outs?...",
+    },
+    {
+      image:
+        "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/18/file7lh182insxihuf2voif-1119130-1655521391.jpg?itok=ClQsk-vb",
+      text: "India burns over Agnipath",
+    },
+  ];
+
+  let news5 = [
+    {
+      text: "Militant who killed J&K bank manager gunned down",
+    },
+    {
+      text: "Karnataka schools advised to send symptomatic kids home",
+    },
+    {
+      text: "Neeraj Chopra shatters own national record",
+    },
+    {
+      text: "China lifts 2-year Covid-19 visa ban on Indians",
+    },
+    {
+      text: "Falling infant mortality rate is a good sign",
+    },
+  ];
+
+  window.onload = new2repeat();
+  function new2repeat() {
+    for (let i = 0; i < news2.length; i = i + 2) {
+      news2d(i);
+    }
+  }
+
+  window.onload = new3repeat();
+  function new3repeat() {
+    for (let i = 0; i < news3.length; i = i + 3) {
+      news3d(i);
+    }
+  }
+  window.onload = new5repeat();
+  function new5repeat() {
+    for (let i = 0; i < news5.length; i = i + 5) {
+      news5d(i);
+    }
+  }
+
+  function news2d(i) {
+    let filternews = news2.map(function (ele, index) {
+      if (index >= i && index < i + 2) {
+        let div = document.createElement("div");
+        div.setAttribute("class", "th");
+        let image = document.createElement("img");
+        image.setAttribute("src", ele.image);
+        let p = document.createElement("p");
+        p.innerText = ele.text;
+        div.append(image, p);
+        document.querySelector(".new2" + countn2).append(div);
+      }
+    });
+    countn2++;
+  }
+  function news3d(i) {
+    let filternews = news3.map(function (ele, index) {
+      if (index >= i && index < i + 3) {
+        let div = document.createElement("div");
+        div.setAttribute("class", "th");
+        let image = document.createElement("img");
+        image.setAttribute("src", ele.image);
+        let p = document.createElement("p");
+        p.innerText = ele.text;
+        div.append(image, p);
+        document.querySelector(".new3" + countn3).append(div);
+      }
+    });
+    countn3++;
+  }
+  function news5d(i) {
+    let filternews = news5.map(function (ele, index) {
+      if (index >= i && index < i + 5) {
+        let div = document.createElement("ul");
+        div.setAttribute("class", "th");
+        let p = document.createElement("li");
+        p.innerText = ele.text;
+        div.append(p);
+        document.querySelector(".new5" + countn5).append(div);
+      }
+    });
+    countn5++;
+  }
+</script>
