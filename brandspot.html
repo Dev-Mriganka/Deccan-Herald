@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <linkhref="https://fonts.googleapis.com/css2?family=Source+S ans+Pro:wght@400;600;700&display=swap"
+            rel="stylesheet"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Source+Serif+Pro&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="brandspot.css">
+    <title>Brandspot</title>
+
+</head>
+
+
+<body>
+    <div id="header"></div>
+    <div class="main-container">
+        <div class="first-div">
+            <div class="a-tag">
+                <a href="#">Home</a>
+            </div>
+            &nbsp; / &nbsp;
+            <div class="vid-a-tag">
+                <a href="">Brandspot</a>
+            </div>
+        </div>
+        <div class="head-title">
+            <a class="brand" href="#">Brandspot</a>
+            <a class="brand" href="#">PR Spot</a>
+        </div>
+        <div class="card-container">
+            <!-- append -->
+            <div class="left-container"></div>
+            <div class="right-container">
+                <div class="title-one-div">
+                    <h3 class="tag">DH PICKS</h3>
+                    <a href="#">VIEW ALL</a>
+                </div>
+                <div class="crouser">
+                    <div class="title-one-div">
+                        <h3 class="tag">WHAT'S BREWING</h3>
+                        <a href="#">VIEW ALL</a>
+                    </div>
+                    <img src=" https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider2.png"
+                        alt="Error" id="image">
+                    <button class="c-btn">
+                        < </button>
+                            <button class="c-btn"> > </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+  <script>
+    $(function () {
+        $("#header").load("nav.html");
+    });
+    $(function () {
+        $("#footer").load("footer.html");
+    });
+</script>
+</html>
+<script>
+    let data = [
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
+            pText: "Featured Content",
+            h4Text: "Mithali Raj retires from international cricket ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/terrorist-afp-1116334-1654672253.jpg?itok=1upb06iK",
+            pText: "Featured Content",
+            h4Text: "Al-Qaeda warns of 'suicide bombings' amid Prophet row... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/2022-04-08t071305z45127257rc2uit9za9tartrmadp3india-economy-ratesjpg1-1116304-1654670184.jpg?itok=9UZnETos",
+            pText: "Featured Content",
+            h4Text: "RBI hikes repo rate by 50 bps, raises inflation... ",
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+            h4Text: "Vijay Shekhar Sharma",
+            pText: "Founder & CEO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png",
+            h4Text: "Kunal Shah",
+            pText: "Founder",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg",
+            h4Text: "Amrish Rau",
+            pText: "CEO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg",
+            h4Text: "Sampad Swain",
+            pText: "Co-Founder & CEO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+            h4Text: "Ankush Sachdeva",
+            pText: "Co-Founder & CEO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg",
+            h4Text: "Bhanu Pratap Singh",
+            pText: "Co-Founder & CTO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png",
+            h4Text: "Farid Ahsan",
+            pText: "Co-Founder & COO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg",
+            h4Text: "Amit Kumar Agarwal",
+            pText: "Founder & CEO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg",
+            h4Text: "Akhil Gupta",
+            pText: "Founder & CTO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg",
+            h4Text: "Saurabh Garg",
+            pText: "Co-Founder & CBO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg",
+            h4Text: "Vipin Pathak",
+            pText: "Co-Founder & CEO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg",
+            h4Text: "Ramakant Sharma",
+            pText: "Founder",
+
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
+            pText: "Featured Content",
+            h4Text: "Mithali Raj retires from international cricket ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/terrorist-afp-1116334-1654672253.jpg?itok=1upb06iK",
+            pText: "Featured Content",
+            h4Text: "Al-Qaeda warns of 'suicide bombings' amid Prophet row... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/2022-04-08t071305z45127257rc2uit9za9tartrmadp3india-economy-ratesjpg1-1116304-1654670184.jpg?itok=9UZnETos",
+            pText: "Featured Content",
+            h4Text: "RBI hikes repo rate by 50 bps, raises inflation... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/407034-01-02-1-1116108-1654603315-1-1116276-1654654317.jpg?itok=BvMPcHqz",
+            pText: "Featured Content",
+            h4Text: " BJP making inroads in Mizoram eyeing 2023 elections...",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/dhfdtrtdrt.png",
+            pText: "Featured Content",
+            h4Text: "Apollo Hospitals: Tech and talent to beat cancer... ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
+            pText: "Featured Content",
+            h4Text: "Mithali Raj retires from international cricket ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/terrorist-afp-1116334-1654672253.jpg?itok=1upb06iK",
+            pText: "Featured Content",
+            h4Text: "Al-Qaeda warns of 'suicide bombings' amid Prophet row... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/2022-04-08t071305z45127257rc2uit9za9tartrmadp3india-economy-ratesjpg1-1116304-1654670184.jpg?itok=9UZnETos",
+            pText: "Featured Content",
+            h4Text: "RBI hikes repo rate by 50 bps, raises inflation... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/407034-01-02-1-1116108-1654603315-1-1116276-1654654317.jpg?itok=BvMPcHqz",
+            pText: "Featured Content",
+            h4Text: " BJP making inroads in Mizoram eyeing 2023 elections...",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/dhfdtrtdrt.png",
+            pText: "Featured Content",
+            h4Text: "Apollo Hospitals: Tech and talent to beat cancer... ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
+            pText: "Featured Content",
+            h4Text: "Mithali Raj retires from international cricket ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/terrorist-afp-1116334-1654672253.jpg?itok=1upb06iK",
+            pText: "Featured Content",
+            h4Text: "Al-Qaeda warns of 'suicide bombings' amid Prophet row... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/2022-04-08t071305z45127257rc2uit9za9tartrmadp3india-economy-ratesjpg1-1116304-1654670184.jpg?itok=9UZnETos",
+            pText: "Featured Content",
+            h4Text: "RBI hikes repo rate by 50 bps, raises inflation... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/407034-01-02-1-1116108-1654603315-1-1116276-1654654317.jpg?itok=BvMPcHqz",
+            pText: "Featured Content",
+            h4Text: " BJP making inroads in Mizoram eyeing 2023 elections...",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/dhfdtrtdrt.png",
+            pText: "Featured Content",
+            h4Text: "Apollo Hospitals: Tech and talent to beat cancer... ",
+        },
+    ];
+    let data2 = [
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
+            pText: "Featured Content",
+            h4Text: "Mithali Raj retires from international cricket ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/terrorist-afp-1116334-1654672253.jpg?itok=1upb06iK",
+            pText: "Featured Content",
+            h4Text: "Al-Qaeda warns of 'suicide bombings' amid Prophet row... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/2022-04-08t071305z45127257rc2uit9za9tartrmadp3india-economy-ratesjpg1-1116304-1654670184.jpg?itok=9UZnETos",
+            pText: "Featured Content",
+            h4Text: "RBI hikes repo rate by 50 bps, raises inflation... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/407034-01-02-1-1116108-1654603315-1-1116276-1654654317.jpg?itok=BvMPcHqz",
+            pText: "Featured Content",
+            h4Text: " BJP making inroads in Mizoram eyeing 2023 elections...",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/dhfdtrtdrt.png",
+            pText: "Featured Content",
+            h4Text: "Apollo Hospitals: Tech and talent to beat cancer... ",
+        },
+
+    ]
+    data.map(function (elem, i) {
+        console.log(i)
+        let card = document.createElement("div");
+        card.setAttribute("class", "card");
+        card.style.backgroundColor = "#F6F6F6"
+
+        let imgDiv = document.createElement("div");
+        imgDiv.setAttribute("class", "img-div");
+        imgDiv.style.backgroundImage = `url(${elem.image})`;
+
+        let titleDiv = document.createElement("div");
+        titleDiv.setAttribute("class", "title-div");
+
+        let pTag = document.createElement("p");
+        pTag.innerText = elem.pText;
+        pTag.style.cursor = "pointer";
+
+
+
+        let h6 = document.createElement("h6");
+        h6.innerText = elem.h4Text;
+
+
+
+        titleDiv.append(pTag, h6);
+
+        card.append(imgDiv, titleDiv);
+        if (i == 1 || i == 33 || i == 35 || i == 67 || i == 69 || i == 79 || i == 80 || i == 81 || i == 82 || i == 101 || i == 104 || i == 111) {
+            titleDiv.style.display = "none"
+            imgDiv.style.display = "none"
+
+        }
+        document.querySelector(".left-container").append(card);
+
+
+
+    });
+    data2.map(function (elem, i) {
+        console.log(i)
+        let card = document.createElement("div");
+        card.setAttribute("class", "card");
+        card.style.backgroundColor = "#F6F6F6"
+
+        let imgDiv = document.createElement("div");
+        imgDiv.setAttribute("class", "img-div");
+        imgDiv.style.backgroundImage = `url(${elem.image})`;
+
+        let titleDiv = document.createElement("div");
+        titleDiv.setAttribute("class", "title-div");
+
+        let pTag = document.createElement("p");
+        pTag.innerText = elem.pText;
+
+        let h6 = document.createElement("h6");
+        h6.innerText = elem.h4Text;
+
+
+
+        titleDiv.append(pTag, h6);
+
+        card.append(imgDiv, titleDiv);
+
+        document.querySelector(".right-container").append(card);
+
+        // right-container
+
+    });
+    let img = document.querySelector("#image");
+    let button = document.querySelectorAll(".c-btn");
+    console.log(button)
+    imgNum = 0;
+    let imgArr = [
+        "https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider1.png",
+        "https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider2.png",
+        "https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider3.png",
+        "https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider3.png",
+
+    ]
+    console.log(imgArr)
+    button[0].addEventListener("click", function () {
+        if (imgNum == 0) {
+            imgNum = imgArr.length - 1;
+        } else {
+            imgNum--;
+        }
+        img.src = imgArr[imgNum]
+    })
+    button[1].addEventListener("click", function () {
+        if (imgNum == imgArr.length - 1) {
+            imgNum = 0;
+        } else {
+            imgNum++;
+        }
+        img.src = imgArr[imgNum]
+    })
+
+</script>
+<script src="https://kit.fontawesome.com/00b3499e31.js" crossorigin="anonymous"></script>
+<script src="./head.js"></script>
+<script>
+    $(function () {
+        $("#foot").load("foot.html");
+    });
+</script>
+<script>
+    $(function () {
+        $("#head-nav").load("head.html");
+    });
+</script>

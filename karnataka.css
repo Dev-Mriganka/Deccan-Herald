@@ -1,0 +1,472 @@
+/* main-container */
+.main-container {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+  height: auto;
+  padding: 10px 5px;
+}
+
+/* tab-section */
+.tab-section {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+/* karnataka */
+.page-title {
+  /* border: 1px solid red; */
+  display: flex;
+  text-align: center;
+  width: 200px;
+  background-color: #68a923;
+  color: white;
+  justify-content: center;
+  height: 70px;
+}
+
+/* navigation-anchor tag decoration */
+.nav-div {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 380px;
+  font-weight: 400;
+}
+
+.page-title {
+  /* border: 1px solid red; */
+  display: flex;
+  text-align: center;
+  width: 200px;
+  background-color: #68a923;
+  color: white;
+  justify-content: center;
+  height: 70px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.top-stories {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  grid-template-rows: 350px 350px;
+  gap: 30px;
+  column-gap: 20px;
+  justify-content: space-around;
+  background-color: #eff6f4;
+  padding: 10px 0px;
+}
+
+.heading-tab {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 50px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.heading-tab > a {
+  display: flex;
+  /* border: 1px solid red; */
+  width: 150px;
+  align-items: center;
+  font-weight: 700;
+}
+
+.heading-tab > a > p {
+  border-top: 8px solid #68a923;
+  width: 25px;
+  height: 30px;
+}
+
+.stories-card-one {
+  border: 1px solid transparent;
+  background-image: url("https://www.deccanherald.com/sites/dh/files/styles/fullcardimage/public/articleimages/2022/06/15/bhimanagouda-sanganagouda-patil-1-1118126-1655215727-1118309-1655285151.jpg?itok=el37SwKB");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.title-1 {
+  position: absolute;
+  bottom: 0px;
+  color: black;
+  font-size: 26px;
+  text-align: center;
+}
+
+.stories-card-two {
+  /* border: 1px solid red; */
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.heading-card {
+  /* border: 1px solid red; */
+  width: 90%;
+  height: 100px;
+  display: flex;
+  margin: 10px auto;
+  align-items: center;
+}
+
+.img > img {
+  /* border: 1px solid red; */
+  width: 130px;
+}
+
+.stories-card-three {
+  /* border: 1px solid teal; */
+  grid-row-start: 2, 3;
+  grid-row-end: 3;
+  grid-column-start: 1, 2;
+  background-color: #ffffff;
+}
+
+.stories-card-four {
+  /* border: 1px solid red; */
+  grid-row-start: 2, 3;
+  grid-row-end: 3;
+  grid-column-start: 2, 3;
+  background-color: #ffffff;
+}
+
+.stories-card-four > div > h4 {
+  /* border: 1px solid red; */
+  /* margin: auto; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 21px;
+  padding: 0px 10px;
+  height: 60px;
+}
+
+.stories-card-five {
+  /* border: 1px solid red; */
+  grid-row-start: 2, 3;
+  grid-row-end: 3;
+  grid-column-start: 3, 4;
+  background-color: #ffffff;
+}
+
+.title {
+  /* border: 1px solid black; */
+  text-align: start;
+  width: 262px;
+  margin: auto;
+}
+
+.politices-container {
+  /* border: 1px solid red; */
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.pol-card-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  grid-template-rows: 400px;
+  grid-row-gap: 20px;
+  grid-column-gap: 50px;
+  /* padding: 5px; */
+}
+
+.p-card-one {
+  /* border: 1px solid red; */
+  background-color: #68a923;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-card-one > div > h4 {
+  /* border: 1px solid red; */
+  width: 400px;
+  font-size: 35px;
+}
+
+.p-card-one > div > p {
+  margin-top: -25px;
+}
+
+.p-card-two {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-card-two > div {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+  height: 220px;
+}
+
+.p-card-two > div > img {
+  /* border: 1px solid red; */
+  width: 250px;
+  margin-right: 15px;
+}
+
+.p-card-three > .heading-card > .title {
+  /* border: 1px solid red; */
+  margin-left: 25px;
+}
+
+.districts-container {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 350px 350px 350px 410px;
+  grid-template-rows: 500px 360px;
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+}
+
+.box1 {
+  /* border: 1px solid red; */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 > div {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  background-color: #68a923;
+  height: 490px;
+  width: 40%;
+}
+
+.box1 > img {
+  /* border: 1px solid red; */
+  width: 60%;
+  height: 490px;
+}
+
+.box1 > div > p {
+  /* border: 1px solid red; */
+  padding-left: 50px;
+  margin-top: 0px;
+  width: 100px;
+}
+
+.title-h4 {
+  font-weight: 700;
+  /* border: 1px solid red; */
+  font-size: 42px;
+  margin: auto;
+  color: white;
+  width: 350px;
+}
+
+.box2 {
+  /* border: 1px solid red; */
+  grid-column-start: 4;
+  grid-column-end: 5;
+  font-family: "Source Serif Pro", serif;
+  font-style: normal;
+}
+
+.box2 > img {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 360px;
+}
+
+.box2 > h4 {
+  /* border: 1px solid red; */
+  font-size: 25px;
+  height: 80px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 32px;
+  color: black;
+  padding: 10px 0px;
+  margin: -5px 0px;
+}
+
+.box3 {
+  /* border: 1px solid red; */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #f6f6f6;
+  padding: 5px;
+}
+
+.box3 > img {
+  border-bottom: 6px solid #68a923;
+
+  width: 342px;
+  height: 200px;
+}
+
+.box3 > h4 {
+  /* border: 1px solid red; */
+  text-align: justify;
+  height: 80px;
+  margin-top: -4px;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.box4 {
+  /* border: 1px solid red; */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: #f6f6f6;
+  padding: 5px;
+}
+
+.box4 > img {
+  border-bottom: 6px solid #68a923;
+
+  width: 342px;
+  height: 200px;
+}
+
+.box4 > h4 {
+  /* border: 1px solid red; */
+  text-align: justify;
+  height: 80px;
+  margin-top: -4px;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.box5 {
+  /* border: 1px solid red; */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: #f6f6f6;
+  padding: 5px;
+}
+
+.box5 > img {
+  border-bottom: 6px solid #68a923;
+  width: 342px;
+  height: 200px;
+}
+
+.box5 > h4 {
+  /* border: 1px solid red; */
+  text-align: justify;
+  height: 80px;
+  margin-top: -4px;
+  font-size: 22px;
+  padding: 5px;
+}
+
+/* .box1>img {
+            border: 1px solid red;
+            width: 550px;
+            height: 300px;
+        } */
+
+.crime-container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+.crime-title-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* margin: auto; */
+}
+
+.tag {
+  width: 200px;
+  position: relative;
+  /* border: 1px solid red; */
+  padding: 8px;
+}
+
+.tag::before {
+  content: "";
+  position: absolute;
+  background: green;
+  width: 32px;
+  left: 25px;
+  margin-bottom: 10px;
+  height: 20%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.crime-title-div > a {
+  color: green;
+}
+
+a {
+  cursor: pointer;
+}
+
+p {
+  cursor: pointer;
+}
+
+h4 {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+h4:hover {
+  text-decoration: underline;
+}
+
+p:hover {
+  text-decoration: underline;
+}
+
+img:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}

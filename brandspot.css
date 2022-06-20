@@ -1,0 +1,272 @@
+body {
+  margin: 100px;
+  padding: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .main-container */
+.main-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+/* on the top of navigation bar contains HOME VIDEO */
+.first-div {
+  width: 1490px;
+  height: 20px;
+  margin: auto;
+  display: flex;
+}
+
+.head-title {
+  border-bottom: 1px solid #ccc;
+  width: 1490px;
+  height: 75px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.brand {
+  width: 184px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand:nth-child(1) {
+  background-color: #0d70b9;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+}
+
+.brand:nth-child(2) {
+  background-color: #f6f6f6;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  color: black;
+}
+
+.card-container {
+  display: flex;
+  width: 1550px;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-container {
+  width: 65%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  width: 470px;
+  height: 180px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px auto;
+}
+
+.card2 {
+  display: flex;
+  width: 420px;
+  height: 160px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px auto;
+}
+
+.img-div {
+  width: 200px;
+  height: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-div2 {
+  width: 200px;
+  height: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title-div {
+  text-align: center;
+  width: 200px;
+  height: 120px;
+}
+
+.title-div2 {
+  text-align: center;
+  width: 220px;
+  height: 150px;
+}
+
+.title-div > p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.title-div2 > p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.title-div > h6 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  text-align: start;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-container {
+  width: 38%;
+  height: 600px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.title-one-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.title-one-div > a {
+  color: #aba12b;
+}
+
+.tag {
+  width: 100px;
+  padding: 12px;
+  text-align: center;
+  position: relative;
+}
+
+.tag::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  background: #aba12b;
+  height: 12px;
+  top: 0px;
+  transform: translate(-50%, -50%);
+  left: 38px;
+}
+
+.a-tag > a {
+  color: #0d70b9;
+}
+
+.vid-a-tag > a {
+  color: black;
+}
+
+.crouser {
+  /* border: 1px solid red; */
+  width: 400px;
+  height: 400px;
+  margin-top: 980px;
+  margin-left: 90px;
+  position: absolute;
+}
+
+.crouser > img {
+  /* border: 3px solid red; */
+  height: 400px;
+  width: 400px;
+}
+
+.crouser > button {
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid red; */
+  position: relative;
+  bottom: 200px;
+  background-color: transparent;
+  color: red;
+  font-size: 35px;
+}
+
+.crouser > button:nth-child(3) {
+  left: 0px;
+  border: 1px solid red;
+}
+
+.crouser > button:nth-child(4) {
+  left: 290px;
+}
+
+a {
+  cursor: pointer;
+}
+
+p {
+  cursor: pointer;
+}
+
+h6 {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+h6:hover {
+  text-decoration: underline;
+}
+
+p:hover {
+  text-decoration: underline;
+}
+
+img:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
