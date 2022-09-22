@@ -45,6 +45,10 @@
 
 ---
 
-<!-- # Lessons Learned
+### Lessons Learned
 
-What did you learn while building this project? What challenges did you face and how did you overcome them? -->
+- Gain excessive knowledge on application of HTML , CSS & JS .
+- Got to know how to collabrate with team members.
+- Enjoyed the process of learning and creating the product.
+
+
