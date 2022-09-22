@@ -2,7 +2,9 @@
 
 
 <img align="right" alt="Coding" width="400" src="https://github.com/Dev-Mriganka/Deccan-Herald/blob/main/DH.jpg">
-### Description
+
+
+## Description
 
 
 
@@ -33,3 +35,16 @@
 - Faiz Ansari       [@dev-faiz]( https://github.com/dev-faiz)
 - Prateek Patil     [@pratikderepatil](https://github.com/pratikderepatil)                                                 
 - Pushpendra Singh  [@erpushpendrasingh]( https://github.com/erpushpendrasingh)
+
+
+### Screenshots
+<img align="left" alt="Coding" width="550" src="https://github.com/Dev-Mriganka/Deccan-Herald/blob/main/DH-L.png">
+<img align="left" alt="Coding" width="250" src="https://github.com/Dev-Mriganka/Deccan-Herald/blob/main/DH-T.png">
+<img align="left" alt="Coding" width="150" src="https://github.com/Dev-Mriganka/Deccan-Herald/blob/main/DH-M.png">
+
+
+---
+
+# Lessons Learned
+
+What did you learn while building this project? What challenges did you face and how did you overcome them?
