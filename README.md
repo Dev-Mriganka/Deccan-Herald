@@ -49,6 +49,5 @@
 <img align="left" alt="Coding" width="150" src="https://github.com/Dev-Mriganka/Deccan-Herald/blob/main/DH-M.png">
 
 
----
 
 
