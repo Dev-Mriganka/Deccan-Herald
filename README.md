@@ -36,6 +36,12 @@
 - Prateek Patil     [@pratikderepatil](https://github.com/pratikderepatil)                                                 
 - Pushpendra Singh  [@erpushpendrasingh]( https://github.com/erpushpendrasingh)
 
+### Lessons Learned
+
+- Gain excessive knowledge on application of HTML , CSS & JS .
+- Got to know how to collabrate with team members.
+- Enjoyed the process of learning and creating the product.
+
 
 ### Screenshots
 <img align="left" alt="Coding" width="550" src="https://github.com/Dev-Mriganka/Deccan-Herald/blob/main/DH-L.png">
@@ -44,11 +50,5 @@
 
 
 ---
-
-### Lessons Learned
-
-- Gain excessive knowledge on application of HTML , CSS & JS .
-- Got to know how to collabrate with team members.
-- Enjoyed the process of learning and creating the product.
 
 
