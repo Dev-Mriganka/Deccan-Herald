@@ -24,3 +24,10 @@
 - News exploration with reponsive UI.
 - User registration functionality.
 - categorized news sections as per user requirement.
+
+### Team 
+
+- Mriganka Mondal   [@dev-mriganka](https://www.github.com/Dev-Mriganka)
+- Faiz Ansari       [@dev-faiz]( https://github.com/dev-faiz)
+- Prateek Patil     [@pratikderepatil](https://github.com/pratikderepatil)                                                 
+- Pushpendra Singh  [@erpushpendrasingh]( https://github.com/erpushpendrasingh)
